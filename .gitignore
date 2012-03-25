@@ -14,3 +14,10 @@
 # Logs #
 *.log
 
+
+# Archivos de IntelliJ IDEA #
+*.iml
+*.ipr
+*.iws
+.idea
+
