@@ -1,0 +1,16 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+
+
+    <bean class="org.springframework.remoting.rmi.RmiServiceExporter">
+        <property name="serviceName" value="empleado-service"/>
+        <property name="service" ref="empleadoImpl"/>
+        <property name="serviceInterface" value="common.dao.EmpleadoInterface"/>
+        <property name="registryPort" value="3333"/>
+    </bean>
+
+    <bean id="empleadoImpl" class="server.EmpleadoImpl"></bean>
+
+</beans>
+
